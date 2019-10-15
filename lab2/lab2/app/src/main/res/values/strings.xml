@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EECS1022 W18 Lab 2: Tax Calculator</string>
+    <string-array name="list1">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Household</item>
+    </string-array>
+</resources>

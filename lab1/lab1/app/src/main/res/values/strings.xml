@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EECS1022 W18 Lab 1: BMI Calculator</string>
+    <string-array name="list1">
+        <item>Kilogram</item>
+        <item>Pounds</item>
+    </string-array>
+
+    <string-array name="list2">
+        <item>Centimeters</item>
+        <item>Inches</item>
+        <item>Feets</item>
+    </string-array>
+</resources>

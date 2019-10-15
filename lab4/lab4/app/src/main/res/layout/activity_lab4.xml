@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="eecs1022.lab4.Lab4Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Client 1"
+        android:id="@+id/client1nametext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial balance of Client 1"
+        android:id="@+id/client1balancetext"
+        android:layout_alignTop="@+id/client1balance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Client 2"
+        android:id="@+id/client2nametext"
+        android:layout_alignTop="@+id/client2name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial Balance of Client 2"
+        android:id="@+id/client2balancetext"
+        android:layout_alignTop="@+id/client2balance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Client 3"
+        android:id="@+id/client3nametext"
+        android:layout_above="@+id/client3balancetext"
+        android:layout_alignRight="@+id/accountowner2text"
+        android:layout_alignEnd="@+id/accountowner2text"
+        android:layout_marginBottom="42dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial Balance of Client 3"
+        android:id="@+id/client3balancetext"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/client2balancetext"
+        android:layout_alignEnd="@+id/client2balancetext"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/client1name"
+        android:layout_alignTop="@+id/client1nametext"
+        android:layout_alignRight="@+id/client2name"
+        android:layout_alignEnd="@+id/client2name"
+        android:layout_toRightOf="@+id/client3nametext"
+        android:layout_toEndOf="@+id/client3nametext"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/client1balance"
+        android:layout_above="@+id/client2name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/client1balancetext"
+        android:layout_toEndOf="@+id/client1balancetext"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/client2name"
+        android:layout_toRightOf="@+id/client2nametext"
+        android:layout_above="@+id/client2balancetext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/client2balance"
+        android:layout_above="@+id/client3name"
+        android:layout_alignLeft="@+id/client3balance"
+        android:layout_alignStart="@+id/client3balance"
+        android:layout_alignRight="@+id/client2name"
+        android:layout_alignEnd="@+id/client2name"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/client3name"
+        android:layout_alignTop="@+id/client3nametext"
+        android:layout_toRightOf="@+id/client3nametext"
+        android:layout_alignRight="@+id/client2name"
+        android:layout_alignEnd="@+id/client2name"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/client3balance"
+        android:layout_alignBottom="@+id/client3balancetext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/client3name"
+        android:layout_toRightOf="@+id/client2balancetext"
+        android:layout_toEndOf="@+id/client2balancetext"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        android:id="@+id/service"
+        android:layout_alignTop="@+id/servicespin"
+        android:layout_toLeftOf="@+id/amount"
+        android:layout_toStartOf="@+id/amount"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/servicespin"
+        android:entries="@array/list1"
+        android:layout_below="@+id/createaccount"
+        android:layout_toRightOf="@+id/service"
+        android:layout_alignRight="@+id/amount"
+        android:layout_alignEnd="@+id/amount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Account Owner"
+        android:id="@+id/accountowner1text"
+        android:layout_below="@+id/service"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Account Owner"
+        android:id="@+id/accountowner2text"
+        android:layout_below="@+id/accountowner1text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accown1"
+        android:entries="@array/list2"
+        android:layout_below="@+id/servicespin"
+        android:layout_toRightOf="@+id/accountowner1text"
+        android:layout_above="@+id/accown2"
+        android:layout_alignRight="@+id/servicespin"
+        android:layout_alignEnd="@+id/servicespin"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accown2"
+        android:entries="@array/list2"
+        android:layout_alignRight="@+id/client2name"
+        android:layout_alignEnd="@+id/client2name"
+        android:layout_below="@+id/accountowner1text"
+        android:layout_alignLeft="@+id/client3name"
+        android:layout_alignStart="@+id/client3name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:id="@+id/amounttext"
+        android:layout_above="@+id/transaction"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:layout_alignBottom="@+id/amounttext"
+        android:layout_alignRight="@+id/accown2"
+        android:layout_alignEnd="@+id/accown2"
+        android:layout_toRightOf="@+id/amounttext"
+        android:layout_toEndOf="@+id/amounttext"
+        android:layout_below="@+id/accountowner2text"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPLETE TRANSACTION"
+        android:id="@+id/transaction"
+        android:onClick="onClickTransaction"
+        android:layout_above="@+id/result1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/result1"
+        android:layout_alignEnd="@+id/result1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result1"
+        android:layout_above="@+id/result2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/result2"
+        android:layout_alignEnd="@+id/result2"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result2"
+        android:layout_above="@+id/result3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/result3"
+        android:layout_alignEnd="@+id/result3"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result3"
+        android:layout_alignRight="@+id/accown2"
+        android:layout_alignEnd="@+id/accown2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNTS"
+        android:id="@+id/createaccount"
+        android:layout_below="@+id/client3balancetext"
+        android:layout_alignRight="@+id/servicespin"
+        android:layout_alignEnd="@+id/servicespin"
+        android:layout_alignLeft="@+id/client3nametext"
+        android:layout_alignStart="@+id/client3nametext"
+        android:onClick="onClickCreateAccounts"/>
+
+</RelativeLayout>

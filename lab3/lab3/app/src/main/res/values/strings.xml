@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EECS1022 W18 Lab 3: R-P-S Game</string>
+    <string-array name="list1">
+        <item>Rock</item>
+        <item>Paper</item>
+        <item>Scissors</item>
+    </string-array>
+</resources>
